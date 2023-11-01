@@ -23,16 +23,18 @@
           Insert preamble text here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer accumsan est a ligula hendrerit, sed faucibus sapien rutrum. Nam placerat, urna id dapibus aliquam, leo ipsum congue quam, in lobortis urna arcu ut tortor. Maecenas hendrerit vehicula rhoncus. Duis pharetra dolor a ipsum posuere, et consequat sapien sollicitudin. Duis in placerat nulla. Aliquam in laoreet quam. Quisque et blandit risus. Nunc malesuada, lorem quis mattis lobortis, lectus magna congue dolor, vitae bibendum nisi metus at arcu. Phasellus et mollis ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc tristique elit a ante scelerisque, quis euismod lacus mattis.
         </div>
       </div>
+      <div class='row'>
+        <form action='' id='trform' onsubmit='false'>
       <div class='row mt-5'>
         <div class='col-4'>
           Are you a domestic or international student?
         </div>
         <div class='col-8'>
           <div class="input-group mb-3">
-            <select class="custom-select" id="inputGroupSelect02">
+            <select class="custom-select" id="selectStatus">
               <option selected>Choose</option>
-              <option value='1'>Domestic</option>
-              <option value='2'>International</option>
+              <option value='domestic'>Domestic</option>
+              <option value='international'>International</option>
             </select>
           </div>
         </div>
@@ -45,10 +47,10 @@
           <div class="input-group mb-3">
             <select class="custom-select" id="inputGroupSelect02">
               <option selected>Choose</option>
-              <option value='1'>Beedie School of Business</option>
-              <option value='2'>Computing</option>
-              <option value='3'>Engineering, Sustainable Energy Engineering, Mechatronic Systems Engineering</option>
-              <option value='4'>Any others</option>
+              <option value='beedie'>Beedie School of Business</option>
+              <option value='computing'>Computing</option>
+              <option value='engineering'>Engineering, Sustainable Energy Engineering, Mechatronic Systems Engineering</option>
+              <option value='default'>Any others</option>
             </select>
           </div>
         </div>
@@ -57,9 +59,9 @@
         <div class='col-4'>
           How many 100-level units do you take?
         </div>
-        <div class='col-4'>
+        <div class='col-8'>
           <div class='input-group mb-3'>
-            <input type="text" class="form-control" aria-label="Amount" placeholder='Number'>
+            <input type="text" class="form-control" aria-label="Amount" placeholder='Number' name='100'>
           </div>
         </div>
       </div>
@@ -67,9 +69,9 @@
         <div class='col-4'>
           How many 200-level units do you take?
         </div>
-        <div class='col-4'>
+        <div class='col-8'>
           <div class='input-group mb-3'>
-            <input type="text" class="form-control" aria-label="Amount" placeholder='Number'>
+            <input type="text" class="form-control" aria-label="Amount" placeholder='Number' name='200'>
           </div>
         </div>
       </div>
@@ -77,9 +79,9 @@
         <div class='col-4'>
           How many 300-level units do you take?
         </div>
-        <div class='col-4'>
+        <div class='col-8'>
           <div class='input-group mb-3'>
-            <input type="text" class="form-control" aria-label="Amount" placeholder='Number'>
+            <input type="text" class="form-control" aria-label="Amount" placeholder='Number' name='300'>
           </div>
         </div>
       </div>
@@ -87,15 +89,19 @@
         <div class='col-4'>
           How many 400-level units do you take?
         </div>
-        <div class='col-4'>
+        <div class='col-8'>
           <div class='input-group mb-3'>
-            <input type="text" class="form-control" aria-label="Amount" placeholder='Number'>
+            <input type="text" class="form-control" aria-label="Amount" placeholder='Number' name='400'>
           </div>
         </div>
+      </div>
+    </form>
       </div>
     </div>
     
     
+    
+<div id="totalPrice"></div>    
     
     
     
